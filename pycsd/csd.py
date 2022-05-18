@@ -68,7 +68,7 @@ def _extract_positions(inst, picks):
             montage = _read_csd_montage(
                 op.join(dir_path, 'templates/EGI_128.csd'))
         else:
-            raise ValueError('CSD Lookup not defined for egi/{}'.format(n_eeg))
+            raise ValueError('CSD Lookup not defined for egi/{}'.format(n_channels))
     else:
         logger.info('Using 10-5 locations for CSD')
         montage = _read_csd_montage(
